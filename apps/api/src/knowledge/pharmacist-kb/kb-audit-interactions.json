@@ -1,0 +1,21 @@
+{
+  "id": "KB-1",
+  "name": "audit-interactions",
+  "rules": [
+    {
+      "id": "BEERS-2023-ACB",
+      "summary": "Anticholinergic burden (ACB) ≥3 raises fall/delirium risk in elderly",
+      "match": ["olanzapine", "quetiapine", "hydroxyzine", "オキシブチニン"]
+    },
+    {
+      "id": "STOPP-FALL-RISK",
+      "summary": "Benzodiazepines / Z-drugs: prefer taper over abrupt stop",
+      "match": ["brotizolam", "zolpidem", "etizolam", "ブロチゾラム", "ゾルピデム"]
+    },
+    {
+      "id": "STOPP-B1",
+      "summary": "Long-term PPI without indication: deprescribe candidate",
+      "match": ["esomeprazole", "lansoprazole", "Nexium", "ネキシウム"]
+    }
+  ]
+}

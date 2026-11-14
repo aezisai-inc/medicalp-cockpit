@@ -1,0 +1,6 @@
+{
+  "bboxCount": 2,
+  "forbiddenNames": ["山田花子", "〇〇総合病院"],
+  "detail": "Plan B closed-model OCR replay (seed). PHI stripped before any partner egress.",
+  "payloadRef": "resident-souvenir-v1.json"
+}

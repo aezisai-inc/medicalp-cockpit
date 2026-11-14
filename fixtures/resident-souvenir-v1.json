@@ -1,0 +1,150 @@
+{
+  "case": {
+    "ageGroup": "80s",
+    "egfr": 42,
+    "symptoms": [
+      "傾眠",
+      "ふらつき"
+    ],
+    "careLevel": "要介護2"
+  },
+  "handwrittenMemo": "夜の薬は減らしたくない（執着）",
+  "meds": [
+    {
+      "id": "m1",
+      "name": "Amlodipine",
+      "usage": "2.5mg",
+      "recommendation": "continue",
+      "annualCost": 12000,
+      "riskWeight": 1,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [],
+      "clinic": "A整形外科"
+    },
+    {
+      "id": "m2",
+      "name": "Lansoprazole",
+      "usage": "15mg",
+      "recommendation": "taper",
+      "annualCost": 26000,
+      "riskWeight": 2,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "週1休薬",
+        "隔日",
+        "中止検討"
+      ],
+      "clinic": "B内科"
+    },
+    {
+      "id": "m3",
+      "name": "Zolpidem",
+      "usage": "5mg",
+      "recommendation": "continue",
+      "annualCost": 22000,
+      "riskWeight": 4,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "HIGH",
+      "stepDown": [
+        "急に止めない",
+        "医師相談"
+      ],
+      "clinic": "CメンタルCL"
+    },
+    {
+      "id": "m4",
+      "name": "Furosemide",
+      "usage": "20mg",
+      "recommendation": "stop",
+      "annualCost": 12000,
+      "riskWeight": 2,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "中止"
+      ],
+      "clinic": "B内科"
+    },
+    {
+      "id": "m5",
+      "name": "Magnesium oxide",
+      "usage": "330mg",
+      "recommendation": "taper",
+      "annualCost": 26000,
+      "riskWeight": 1,
+      "dosesPerDay": 2,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "夕食のみ"
+      ],
+      "clinic": "A整形外科"
+    },
+    {
+      "id": "m6",
+      "name": "Rebamipide",
+      "usage": "100mg",
+      "recommendation": "stop",
+      "annualCost": 12000,
+      "riskWeight": 1,
+      "dosesPerDay": 3,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "中止"
+      ],
+      "clinic": "B内科"
+    },
+    {
+      "id": "m7",
+      "name": "Aspirin",
+      "usage": "100mg",
+      "recommendation": "stop",
+      "annualCost": 10000,
+      "riskWeight": 2,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "中止"
+      ],
+      "clinic": "CメンタルCL"
+    },
+    {
+      "id": "m8",
+      "name": "Lorazepam",
+      "usage": "0.5mg",
+      "recommendation": "continue",
+      "annualCost": 15000,
+      "riskWeight": 5,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "HIGH",
+      "stepDown": [
+        "急に止めない"
+      ],
+      "clinic": "CメンタルCL"
+    },
+    {
+      "id": "m9",
+      "name": "Vitamin D",
+      "usage": "1000IU",
+      "recommendation": "stop",
+      "annualCost": 8400,
+      "riskWeight": 0,
+      "dosesPerDay": 1,
+      "active": true,
+      "psychDependency": "NONE",
+      "stepDown": [
+        "中止"
+      ],
+      "clinic": "A整形外科"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "riskDelta": 70,
+    "costDelta": 68400,
+    "assistDelta": 1095,
+    "fallRiskBefore": 88,
+    "fallRiskAfter": 18
+  },
+  "destroyProof": "destroyed:3fef99a8-896d-4b66-b7ba-310122bf9655",
+  "sandboxId": "3fef99a8-896d-4b66-b7ba-310122bf9655"
+}

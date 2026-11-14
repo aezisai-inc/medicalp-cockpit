@@ -1,0 +1,41 @@
+# Daytona sandbox scoring — host injects _meds, _max_cost, optional _codeaf_spec
+import json
+if "_meds" not in globals():
+  _meds = []
+if "_max_cost" not in globals():
+  _max_cost = 0
+if "_codeaf_spec" not in globals():
+  _codeaf_spec = {}
+spec = _codeaf_spec if isinstance(_codeaf_spec, dict) else {}
+taper = float(spec.get("taper_step_ratio", 1.0) or 1.0)
+if taper <= 0:
+  taper = 1.0
+half = float(spec.get("half_life_hours", 30) or 30)
+half_factor = max(0.75, min(1.25, half / 30.0))
+acb = spec.get("acb_weights") or {}
+acb_sum = 0.0
+if isinstance(acb, dict):
+  for v in acb.values():
+    try:
+      acb_sum += float(v)
+    except Exception:
+      pass
+acb_boost = min(0.2, acb_sum * 0.02)
+cost = sum(int(m.get("annualCost", 0)) for m in _meds)
+max_cost = int(_max_cost) if int(_max_cost or 0) > 0 else (cost if cost else 1)
+ratio = min(1.0, max(0.0, float(cost) / float(max_cost)))
+fall_before = 88
+drop = 70 * ratio * taper * (1.0 + acb_boost)
+fall_after = int(max(18, min(fall_before, round(fall_before - drop))))
+rules = spec.get("kb_rule_id") or []
+if not isinstance(rules, list):
+  rules = []
+print(json.dumps({
+  "riskDelta": int(round(70 * ratio * taper * (1.0 + acb_boost))),
+  "costDelta": int(round(cost * taper)),
+  "assistDelta": int(round(1095 * ratio * taper * half_factor)),
+  "fallRiskBefore": fall_before,
+  "fallRiskAfter": fall_after,
+  "appliedKbRules": [str(x) for x in rules],
+  "taperApplied": taper
+}))

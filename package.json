@@ -1,0 +1,12 @@
+{
+  "name": "poc-aria-care-audit",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "test:unit": "pnpm --filter @care-audit/api test:unit",
+    "dev:api": "pnpm --filter @care-audit/api start:dev",
+    "dev:web": "pnpm --filter @care-audit/web dev",
+    "build": "pnpm -r build"
+  }
+}

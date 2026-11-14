@@ -1,0 +1,7 @@
+{
+  "natural": { "width": 1240, "height": 1754 },
+  "boxes": [
+    { "label": "patientName", "x": 72, "y": 110, "w": 380, "h": 42 },
+    { "label": "hospitalName", "x": 72, "y": 168, "w": 460, "h": 36 }
+  ]
+}

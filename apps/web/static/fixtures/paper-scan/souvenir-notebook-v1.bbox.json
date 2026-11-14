@@ -1,0 +1,6 @@
+{
+  "boxes": [
+    {"label": "patientName", "x": 12, "y": 20, "w": 120, "h": 24},
+    {"label": "hospitalName", "x": 200, "y": 18, "w": 140, "h": 22}
+  ]
+}

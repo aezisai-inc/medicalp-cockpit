@@ -1,0 +1,7 @@
+{
+  "PocAriaCareAuditStack": {
+    "DistributionDomain": "dgcdk3euel458.cloudfront.net",
+    "WebBucketName": "pocariacareauditstack-webassets27872646-vt7kwocelylg",
+    "ApiFunctionUrl": "https://a3elooph7k3hldj3wdiuyrh4vu0qlphh.lambda-url.ap-northeast-1.on.aws/"
+  }
+}

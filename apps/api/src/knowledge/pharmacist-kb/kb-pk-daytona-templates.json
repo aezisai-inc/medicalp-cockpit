@@ -1,0 +1,14 @@
+{
+  "id": "KB-2",
+  "name": "pk-daytona-templates",
+  "defaults": {
+    "taper_step_ratio": 0.75,
+    "half_life_hours": 30,
+    "acb_weights": {
+      "olanzapine": 3,
+      "quetiapine": 2,
+      "hydroxyzine": 3
+    }
+  },
+  "simNotes": "Daytona Python applies taper_step_ratio to cost/risk deltas; half_life_hours scales assistDelta gently."
+}
